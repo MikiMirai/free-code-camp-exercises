@@ -1,0 +1,57 @@
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    position: fixed;
+}
+
+html, body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body{
+        display: block;
+    margin: 8px;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 20, 20, 0.4);
+}
+
+#nvabar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nvabar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
