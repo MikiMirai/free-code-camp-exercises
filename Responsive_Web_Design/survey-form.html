@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./survey-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="text-center"> Thank you for taking the time to help us improve the platfoorm</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name </label>
+                <input class="form-input-text" placeholder="Enter your name" id="name" type="text" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label">Email </label>
+                <input class="form-input-text" placeholder="Enter your email" id="email" type="email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label">Age </label>
+                <input class="form-input-text" placeholder="Age" min="13" max="120" id="number" type="number" required>
+            </div>
+            <div class="form-group">
+                <label>Which element best describes your current role?</label>
+                <select id="dropdown" class="form-input">
+                    <option>Student</option>
+                    <option>Full-Time Job</option>
+                    <option>Part-Time Job</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Would you recommend this site to a friend?</label>
+                <label>
+                    <input type="radio" value="definitely" class="input-radio" name="recommend">
+                    Definitely
+                </label>
+                <label>
+                    <input type="radio" value="definitely" class="input-radio" name="recommend">
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" value="definitely" class="input-radio" name="recommend">
+                    Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>What skill would you like to improve in the future?</p>
+
+                <label>
+                    <input value="web-dev" class="form-input input-checkbox" name="improvement" type="checkbox">
+                    Web Development
+                </label>
+                <label>
+                    <input value="data-visualization" class="form-input input-checkbox" name="improvement"
+                        type="checkbox">
+                    Data Visualization
+                </label>
+                <label>
+                    <input value="front-end" class="form-input input-checkbox" name="improvement" type="checkbox">
+                    Froont-End Development
+                </label>
+                <label>
+                    <input value="video-editing" class="form-input input-checkbox" name="improvement" type="checkbox">
+                    Video Editing
+                </label>
+                <label>
+                    <input value="game-dev" class="form-input input-checkbox" name="improvement" type="checkbox">
+                    Game Development
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" name="comment"></textarea>
+            </div>
+
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
