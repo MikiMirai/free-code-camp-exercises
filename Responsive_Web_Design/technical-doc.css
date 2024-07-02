@@ -1,21 +1,27 @@
-
-@media (max-width: 1199px) and (min-width: 769px) {
-    position: fixed;
+:root {
+    --nav-text: #304052;
 }
 
-html, body {
+@media (max-width: 1200px) and (min-width: 770px) {
+    navbar {
+        position: fixed;
+    }
+}
+
+html,
+body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
 }
 
-body{
-        display: block;
-    margin: 8px;
+ul {
+    list-style: none;
+    padding-left: 0px;
 }
 
-#main-doc header{
-    text-align: left;
-    margin: 0px;
+body {
+    display: block;
+    margin: 8px;
 }
 
 header {
@@ -26,30 +32,46 @@ header {
 
 nav {
     display: block;
-    unicode-bidi: isolate;
+}
+
+code {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 280px;
+    padding: 20px;
+
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
 }
 
 #navbar {
     position: fixed;
-    min-width: 290px;
+    min-width: 260px;
     top: 0px;
     left: 0px;
-    width: 300px;
+    width: 260px;
     height: 100%;
     border-right: solid;
     border-color: rgba(0, 20, 20, 0.4);
 }
 
-#nvabar a {
+.nav-link {
     display: block;
     padding: 10px 30px;
-    color: #4d4e53;
+    color: var(--nav-text);
     text-decoration: none;
     cursor: pointer;
 }
 
-#nvabar li {
-    color: #4d4e53;
+.nav-item {
+    color: var(--nav-text);
     border-top: 1px solid;
     list-style: none;
     position: relative;
