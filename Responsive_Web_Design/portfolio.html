@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Personal portfolio project" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -20,8 +20,8 @@
     <header>
         <nav id="navbar" class="nav">
             <ul class="nav-list">
-                <li><a href="#welcome-section" accesskey="s">About</a></li>
-                <li><a href="#projects" accesskey="h">Projects</a></li>
+                <li><a href="#welcome-section" accesskey="w">About</a></li>
+                <li><a href="#projects" accesskey="p">Projects</a></li>
                 <li><a href="#contact" accesskey="c">Contacts</a></li>
             </ul>
         </nav>
@@ -30,63 +30,19 @@
         <h1>Hey I am Miki</h1>
         <p>a web developer</p>
     </section>
-    <section id="projects">
+    <section id="projects" class="projects-section">
         <div class="projects-grid">
-            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
-                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-                    alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Tribute Page
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
-                <img class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-                    alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Random Quote Machine
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
-                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-                    alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    JavaScript Calculator
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
-                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-                    alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Map Data Across the Globe
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
-                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-                    alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Wikipedia Viewer
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
-            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-                <img class="project-image"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project">
-                <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Tic Tac Toe Game
-                    <span class="code">/&gt;</span>
-                </p>
-            </a>
+            <h2 class="projects-header">These are some of my projects</h2>
+            <div class="projects-grid">
+                    <a class="project-tile" href="https://github.com/MikiMirai/Cubith?tab=readme-ov-file">
+                        <img class="project-image" src="https://private-user-images.githubusercontent.com/100376192/318644277-4d4db6f7-e71d-454e-ba40-f6ffee1c0dc8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk5MTU0NzMsIm5iZiI6MTcxOTkxNTE3MywicGF0aCI6Ii8xMDAzNzYxOTIvMzE4NjQ0Mjc3LTRkNGRiNmY3LWU3MWQtNDU0ZS1iYTQwLWY2ZmZlZTFjMGRjOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwMlQxMDEyNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYjVjNGI2ZGM3YTM0ZDlmZDUwMTU1OWM3Mzk3NjM5YzIzM2Y0OTA3YTg5NTgyYTY4MDZiMDJmMmNkMzE1ZDY5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.60vGHkj18tiVdkX4eaQnzg9WoQXlP8EEixLV2LjKPo0">
+                        <p class="project-title">Cubith Menu</p>
+                    </a>
+                    <a class="project-tile"  href="https://github.com/MikiMirai/Cubith?tab=readme-ov-file">
+                    <img class="project-image" src="https://private-user-images.githubusercontent.com/100376192/318644301-4778c337-cf3c-41f5-baca-7f490c905817.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTk5MTU0NzMsIm5iZiI6MTcxOTkxNTE3MywicGF0aCI6Ii8xMDAzNzYxOTIvMzE4NjQ0MzAxLTQ3NzhjMzM3LWNmM2MtNDFmNS1iYWNhLTdmNDkwYzkwNTgxNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzAyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwMlQxMDEyNTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MWJhNzc2ZDQ4ZWI4NzkyNTU4MTk4ODM5MDkxOGY1NTE5NGE3YjQ5YTU2OWZiMmVlY2QzZjViOGM3ZTU0Yjg2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1JUhqGwv35ZQm0D64DY2P99oOUQBeTlS1XJA2tUxSYU">
+                    <p class="project-title">Cubith Gameplay</p>
+                </a>
+            </div>
         </div>
     </section>
     <section id="contact" class="contact-section">
