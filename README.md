@@ -4,3 +4,6 @@
 
 ## Possible issues
 - If something looks wrong on the page check if the line `<link href="./example-stylesheet.css" rel="stylesheet" />` inside the .html file, has the correct file name in the **href** attribute
+
+## Credits
+With the help of https://www.freecodecamp.org/
